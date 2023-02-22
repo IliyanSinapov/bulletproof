@@ -11,20 +11,21 @@
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
         />
 
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
         <meta charset="UTF-8">
         <title>Bulletproof</title>
 
         <!--  This span is filled with <link> tags for css files!  -->
         <span>
-            <link rel="stylesheet" href="css/styles/sidebar-style.css">
-            <link rel="stylesheet" href="css/styles/style.css">
+        <!--  This span contains the css files for the navigation /desktop and mobile/  -->
+            <span id = "navigation-css"></span>
+            <link rel="stylesheet" href="css/styles/style.css" >
         </span>
 
         <!--  This span is filled with <script> tags for JavaScript files!  -->
         <span>
-            <script src = "js/sidebar-script.js" type="module"></script>
+            <script src="js/scripts/navigation-script.js" type="module"></script>
         </span>
 
     </head>
@@ -32,43 +33,60 @@
     <body>
 
         <header>
-            <span class = "desktop-user">
+            <span id="mobile-user">
                 <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link current" href="#">
-                            <span><i class="fas fa-home"></i></span> Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span><i class="fas fa-address-card"></i></span> About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span><i class="fas fa-briefcase"></i></span> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span><i class="fas fa-blog"></i></span> Blog
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span><i class="fas fa-envelope"></i></span> Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link current" href="#">
+                                <span><i class="fas fa-home"></i></span> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-address-card"></i></span> About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-briefcase"></i></span> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-blog"></i></span> Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><i class="fas fa-envelope"></i></span> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </span>
 
-            <span class = "mobile-user">
-
+            <span id="desktop-user">
+                <nav class="navbar container">
+                    <a href="index.html" class="nav-link">LOGO</a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <div class="active"></div>
+                    </ul>
+                </nav>
             </span>
         </header>
         <main>
