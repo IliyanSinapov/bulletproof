@@ -1,6 +1,5 @@
 //Desktop device
 const navbar = document.getElementById("desktop-user");
-const desktopMainPage = document.getElementById("desktop-main-page");
 //Mobile device
 const sidebar = document.getElementById("mobile-user");
 //Navigation span for css
@@ -8,9 +7,8 @@ const span = document.getElementById("navigation-css");
 const link = document.createElement("link");
 
 function checkUserDevice() {
-    if (screen.width < 768) {
+    if (screen.width < 811) {
         navbar.style.display = "none";
-        desktopMainPage.style.display = "none";
         sidebar.style.display = "block";
 
 
@@ -32,7 +30,6 @@ function checkUserDevice() {
         span.innerHTML = "";
 
         navbar.style.display = "block";
-        desktopMainPage.style.display = "block";
         sidebar.style.display = "none";
     }
     span.appendChild(link);
