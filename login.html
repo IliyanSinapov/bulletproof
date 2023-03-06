@@ -27,7 +27,7 @@
         <!--  This span is filled with <script> tags for JavaScript files!  -->
         <span>
             <script src="js/scripts/navigation-script.js" type="module"></script>
-            <script src="js/scripts/main-page-script.js" type="module"></script>
+            <script src="js/scripts/form-page-script.js" type="module"></script>
         </span>
 
     </head>
@@ -70,23 +70,37 @@
 
             <span id="desktop-user">
                 <nav class="navbar container">
-                    <a href="index.html" class="nav-link">LOGO</a>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Logout</a>
-                        </li>
-                        <div class="active"></div>
-                    </ul>
-                </nav>
+                        <a href="index.html" class="nav-link">LOGO</a>
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Login</a>
+                            </li>
+                            <li class="nav-item dropdown">
+<!--                                <a href="#" class="nav-link">Logout</a>-->
+                                <a class = "dropdown-header nav-link"> Username</a>
+                                <ul class = "dropdown-menu">
+                                    <li class = "dropdown-item">
+                                        <a href="#" class = "nav-link"> Account</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class = "nav-link">Settings</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class = "nav-link">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div class="active"></div>
+                        </ul>
+                    </nav>
             </span>
         </header>
 

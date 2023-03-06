@@ -6,6 +6,23 @@ const sidebar = document.getElementById("mobile-user");
 const span = document.getElementById("navigation-css");
 const link = document.createElement("link");
 
+//dropdown
+const accDropdown  = document.querySelector(".dropdown");
+const dropdownHeader  = document.querySelector(".dropdown-header");
+
+accDropdown.addEventListener("click", (event) => {
+    event.preventDefault()
+    const dropdownMenu = event.target.querySelector(".dropdown-menu");
+    dropdownMenu.classList.toggle("show");
+})
+
+dropdownHeader.addEventListener("click", (event) => {
+    event.preventDefault()
+    const dropdown = dropdownHeader.parentElement;
+    const dropdownMenu = dropdown.children[1];
+    dropdownMenu.classList.toggle("show");
+})
+
 function checkUserDevice() {
     if (screen.width < 811) {
         navbar.style.display = "none";
